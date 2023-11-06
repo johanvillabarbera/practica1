@@ -1,4 +1,10 @@
-#!/usr/bin/env sh
+#!/bin/bash
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "baaaaaa"
+branch_name=$(git symbolic-ref --short HEAD)
+
+if [ ${branch_name} = "hotfix"]; then
+    echo "La rama es hotfix"
+fi
+
+
