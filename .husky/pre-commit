@@ -3,7 +3,7 @@
 
 branch_name=$(git symbolic-ref --short HEAD)
 
-if [ ${branch_name} = "hotfix"]; then
+if [[ ${branch_name} = "hotfix"]]; then
     echo "La rama es hotfix"
 fi
 
