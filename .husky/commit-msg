@@ -1,6 +1,12 @@
-#!/usr/bin/env sh
+#!/bin/bash
 . "$(dirname -- "$0")/_/husky.sh"
 
-# message="$(cat $1)"
+branch_name=$(git symbolic-ref --short HEAD)
+commit_message=$(<"$1")
 
-# echo "MSGO".$message
+if [ "$branch_name" = "hotfix" ]; then
+  if [[ "${commit_message}" != *"A corregir por:"* ]]; then
+    echo "No existe una persona asignada"
+    exit 1
+  fi
+fi
