@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petanca</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Javascript para HTML</h1>
+        <img src="./img/1ca3790edd6207b40f8cd4ecaa99bb12.jpg">
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contenidoHTML.html">Modificar contenido HTML</a>
+        <a href="atributosHTML.html">Modificar atributos HTML</a>
+        <a href="estilosCSS.html" class="active">Modificar estilos CSS</a>
+    </div>
+
+    <main>
+        <h1>
+            Cómo modificar estilos CSS desde JavaScript
+        </h1>
+
+        <img src="./img/CSVSJS.png">
+
+        <h2>
+            Introducción
+        </h2>
+
+        <p>
+            JavaScript es un lenguaje de programación de propósito general que se utiliza ampliamente en el desarrollo web. 
+            Además de su capacidad para manipular el DOM, JavaScript también puede utilizarse para modificar los estilos CSS de los elementos HTML.
+        </p>
+
+        <h2>
+            Modificando la propiedad style
+        </h2>
+
+        <p>
+            La propiedad style del elemento HTML es un objeto que contiene todas las propiedades CSS aplicadas al elemento. Podemos utilizar esta propiedad para modificar el estilo del elemento en tiempo de ejecución.
+        
+            Para modificar la propiedad style de un elemento, primero debemos obtener una referencia al elemento. Podemos hacerlo utilizando el método querySelector() del objeto document.
+            
+            Una vez que tenemos una referencia al elemento, podemos acceder a su propiedad style utilizando el operador de punto.    
+        </p>
+        
+        <p>
+            También podemos utilizar el método setProperty() para modificar una propiedad CSS específica. 
+            El método setProperty() toma dos argumentos: el nombre de la propiedad y el valor de la propiedad.
+        </p>
+
+        <h2>
+            Utilizando el método setAttribute()
+        </h2>
+
+        <p>
+            El método setAttribute() del objeto Element se utiliza para establecer el valor de un atributo del elemento. Podemos utilizar este método para establecer el valor del atributo style del elemento.
+
+            El valor del atributo style debe ser una cadena que contenga las propiedades CSS aplicadas al elemento.
+        </p>
+
+        <h2>
+            Conclusión
+        </h2>
+
+        <p>
+            Modificar estilos CSS desde JavaScript es una habilidad útil que puede utilizarse para añadir interactividad y funcionalidad a las páginas web. 
+            Con los dos métodos que hemos aprendido, podemos modificar cualquier propiedad CSS de un elemento HTML en tiempo de ejecución.
+        </p>
+        
+        
+
+
+    </main>
+    <footer>
+        Footer del sitio
+    </footer>
+</body>
+</html>
